@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #2C2C2C;
+    color: white;
+    
+}
+
+.main{
+    display:flex;
+    gap: 200px;
+}
+
+
+
+.left h3 {
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.tralaleroImage {
+    width: 200px;
+    user-select: none;
+
+}
+
+.tralaleroImage:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.tralaleroImage:active{
+    opacity:0.8;
+    transform:scale(1.1);
+
+}
