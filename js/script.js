@@ -1,4 +1,4 @@
-let tralaleroAmount = 4;
+let tralaleroAmount = 0;
 let incTralaleroAmount = 1;
 function updateTralaleroAmount() {
     document.getElementById("tralalero-amount").innerHTML = tralaleroAmount;
