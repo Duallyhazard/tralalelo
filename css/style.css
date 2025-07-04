@@ -22,7 +22,7 @@ body {
 .header {
     padding: 5px;
     text-align: left;
-    background: #3d9eda;
+    background: #274965;
     color: rgb(255, 232, 192);
     font-size: 20px;
     white-space: nowrap;
@@ -65,22 +65,37 @@ body {
 }
 
 .top-section {
-    display:inline;
+    display:flex;
     white-space: nowrap;
+    float:middle;
+    justify-content: space-between;
+}
+
+.bottom-section {
+    
+}
+
+.upgradeName {
+    display:inline-block;
+    padding:10px
 }
 
 .upgrades{
-    align-items: center;
-    border: 3px solid skyblue;
+    
+    border: 3px solid #697b7f/* skyblue*/;
     padding:10px 5px;
-    justify-content:space-evenly ;
     border-radius: 7px;
     font-family: "Roboto", sans-serif;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 70px;
     margin:15px 0px;
     background: #4d4d4d;
+
     position: relative;
+    justify-content:space-between ;
+    align-items: center;
+    display:flex;
+    float: middle;
 }
 
 .upgrades:hover {
@@ -89,36 +104,40 @@ body {
 }
 
 .upgradeImage {
-    width:50px;
+    width:65px;
     border-radius: 10px;
     user-select: none;
     margin:4px;
+
+    
 }
 
 .currencyImage {
-    width:17px;
+    width:18px;
     border-radius: 8px;
     padding:4px;
+    user-select: none;
 
 }
 
 .costInfo {
     display:flex;
-    height:20px;
     align-items: center;
     margin-top: 6px;
     margin-bottom: 6px;
+    justify-content:space-between ;
+    
 }
 
-.bombCrocTooltip {
+.tooltip {
     width: 50%;
-    height:90%;
+    height:80%;
     background-color: #4d4d4d;
     color: rgb#D6FFFF;
     text-align: center;
     padding: 10px 5px;
     border-radius: 7px;
-    border: 3px solid skyblue;
+    border: 3px solid #697b7f;
     margin:0px;
 
     position: absolute;
@@ -132,6 +151,14 @@ body {
 
 }
 
-.upgrades:hover .bombCrocTooltip{
+.upgrades:hover .tooltip{
     opacity:1;
+}
+
+.LL {
+    border: 3px solid #33624c;
+}
+
+.BBP {
+    border: 3px solid #adad9a;
 }

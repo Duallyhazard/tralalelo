@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <!-- Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!---      -->
+    <!--- Favicon    -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
 
 
@@ -27,31 +28,66 @@
         <div class = "header">
             <p class = "title"> Tralalero Idle </p>
             <p class = "tralaleroCount"> Tralaleros: <b><span id="tralalero-amount">  </span></b> </p>
+            <p class = "tralaleroCount"> Per Second: <b><span id= "tralaleroPerSecond" > </span></b></p>
             
         </div>
         <div class = "main">
             
             <div class = "left">
                 <!--<h3> Tralaleros : <span id="tralalero-amount">  </span> </h3> -->
-                <img src = "tralalero.png" class = "tralaleroImage" onclick = "increaseTralalero()" draggable="false">
+                <img src = "images/tralalero.png" class = "tralaleroImage" onclick = "increaseTralalero()" draggable="false">
             </div>
             <!-- upgrades -->
             <div class = "right">
                 <!-- Bombardino Crocodilo-->
-                <div class = "upgrades" onclick = "buyBombCroc()">
-                    <span class = "bombCrocTooltip"> 
+                <div class = "upgrades BC" onclick = "buyBombCroc()">
+                    <span class = "tooltip BC"> 
                         Each Bombardino Crocodilo produces 0.5 Tralalero Tralalas per second.
                     </span>
                     <div class = "top-section">
-                        <img src = "bombardinoCrocodilo.jpg" class = "upgradeImage">
-                        <h4> Bombardino Crocodilo </h4>
+                        <img src = "images/bombardinoCrocodilo.jpg" class = "upgradeImage">
+                        <h4 class = "upgradeName"> Bombardino Crocodilo </h4>
                         <div class = "costInfo">
                             <p> <span id = "bombCrocCost"> </span> </p>
-                            <img src = "tralalero.png" class = "currencyImage">
+                            <img src = "images/tralalero.png" class = "currencyImage">
                         </div>
                     </div>
                     <div class = "bottom-section">
                         <p> Level <b><span id = "bombCrocLevel"> </span> </b></p>
+                    </div>
+                </div>
+                <!-- Lirili Larila -->
+                <div class = "upgrades LL" onclick = "buyLiriliLarila()">
+                    <span class = "tooltip LL"> 
+                        Each Lirili Larila produces 2 Tralalero Tralalas per second.
+                    </span>
+                    <div class = "top-section">
+                        <img src = "images/liriliLarila.jpg" class = "upgradeImage">
+                        <h4 class = "upgradeName"> Lirili Larila </h4>
+                        <div class = "costInfo">
+                            <p> <span id = "liriliLarilaCost"> </span> </p>
+                            <img src = "images/tralalero.png" class = "currencyImage">
+                        </div>
+                    </div>
+                    <div class = "bottom-section">
+                        <p> Level <b><span id = "liriliLarilaLevel"> </span> </b></p>
+                    </div>
+                </div>
+                <!-- Brr Brr Patapim -->
+                 <div class = "upgrades BBP" onclick = "buyBrrBrrPatapim()">
+                    <span class = "tooltip BBP"> 
+                        Each Brr Brr Patapim produces 5 Tralalero Tralalas per second.
+                    </span>
+                    <div class = "top-section">
+                        <img src = "images/brrBrrPatapim.jpg" class = "upgradeImage">
+                        <h4 class = "upgradeName"> Brr Brr Patapim </h4>
+                        <div class = "costInfo">
+                            <p> <span id = "brrBrrPatapimCost"> </span> </p>
+                            <img src = "images/tralalero.png" class = "currencyImage">
+                        </div>
+                    </div>
+                    <div class = "bottom-section">
+                        <p> Level <b><span id = "brrBrrPatapimLevel"> </span> </b></p>
                     </div>
                 </div>
             </div>
